@@ -1,0 +1,3 @@
+SUBSYSTEM=="power_supply", ATTR(status)=="Discharging", ATTR(capacity)=="[15-6]", RUN+="/home/mathias/bin/udev/batwarn.sh"
+SUBSYSTEM=="power_supply", ATTR(status)=="Discharging", ATTR(capacity)=="[5-0]", RUN+="/usr/bin/systemctl suspend"
+

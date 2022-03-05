@@ -1,0 +1,86 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Setup term for programs to be able to use it
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 15
+    y: 15
+
+  decorations: None
+
+font:
+  normal:
+    family: Liga SF Mono Nerd Font
+    style: Light
+
+  # Bold font face
+  bold:
+    family: Liga SF Mono Nerd Font
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: Liga SF Mono Nerd Font
+    style: Italic
+  # Font size
+  # size: 10.0
+mouse:
+  hide_when_typing: true
+
+# Colors (Sonokai-Andromeda)
+#colors:
+#  primary:
+#    background: "0x2b2d3a"
+#    foreground: "0xe1e3e4"
+#
+#  normal:
+#    black: "0x181a1c"
+#    red: "0xfb617e"
+#    green: "0x9ed06c"
+#    yellow: "0xedc763"
+#    blue: "0x6dcae8"
+#    magenta: "0xbb97ee"
+#    cyan: "0xf89860"
+#    white: "0xe1e3e4"
+#
+#  bright:
+#    black: "0x7e8294"
+#    red: "0xfb617e"
+#    green: "0x9ed06c"
+#    yellow: "0xedc763"
+#    blue: "0x6dcae8"
+#    magenta: "0xbb97ee"
+#    cyan: "0xf89860"
+#    white: "0xe1e3e4"
+
+# Colors (Sonokai-Atlantis)
+colors:
+  name: Sonokai-Atlantis
+  author: Sainnhe
+  primary:
+    background: "0x2a2f38"
+    foreground: "0xe1e3e4"
+
+  normal:
+    black: "0x181a1c"
+    red: "0xff6578"
+    green: "0x9dd274"
+    yellow: "0xeacb64"
+    blue: "0x72cce8"
+    magenta: "0xba9cf3"
+    cyan: "0xf69c5e"
+    white: "0xe1e3e4"
+
+  bright:
+    black: "0x828a9a"
+    red: "0xff6578"
+    green: "0x9dd274"
+    yellow: "0xeacb64"
+    blue: "0x72cce8"
+    magenta: "0xba9cf3"
+    cyan: "0xf69c5e"
+    white: "0xe1e3e4"
+

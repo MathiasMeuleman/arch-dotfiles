@@ -1,0 +1,13 @@
+font=Liga SF Mono Nerd Font 9
+margin=15,15,0,0
+height=50
+default-timeout=10000
+anchor=bottom-right
+
+on-button-left=dismiss
+on-button-right=dismiss
+on-button-middle=invoke-default-action
+
+[urgency=critical]
+background-color=#ff657866
+border-color=#ff6578
