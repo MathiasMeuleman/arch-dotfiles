@@ -9,7 +9,7 @@ set $up k
 set $right l
 set $term DRI_PRIME=0 alacritty
 set $menu wofi --show drun
-set $background ~/.config/wallpapers/mountain-peaks-1-1920x1080.jpg fill
+set $background /home/mathias/.config/wallpapers/mountain-peaks-1-1920x1080.jpg fill
 
 ### Output configuration
 #
@@ -17,12 +17,21 @@ set $background ~/.config/wallpapers/mountain-peaks-1-1920x1080.jpg fill
 output * bg $background
 
 # Office
-#output eDP-2 resolution 1920x1080 position 0,360
-#output HDMI-A-1 resolution 2560x1440 position 1920,0
+output eDP-2 resolution 1920x1080 position 0,360
+output HDMI-A-1 resolution 2560x1440 position 1920,0
+
+# Office Ruben
+#output HDMI-A-1 resolution 2560x1440 position 1440,560
+#output DP-1 resolution 2560x1440 position 0,0 transform 270
+#output eDP-2 disable
+
+# TV
+#output eDP-2 resolution 1920x1080 position 320,1440
+#output HDMI-A-1 resolution 1920x1080 position 0,0
 
 # Home
-output eDP-2 resolution 1920x1080 position 320,1440
-output HDMI-A-1 resolution 2560x1440 position 0,0
+#output eDP-2 resolution 1920x1080 position 320,1440
+#output HDMI-A-1 resolution 2560x1440 position 0,0
 
 bindsym $mod+m output HDMI-A-1 enable
 bindsym $mod+Shift+m output HDMI-A-1 disable
@@ -96,6 +105,8 @@ gaps bottom -10
 ### Execute on startup
 # Blue light filtering
 exec wlsunset -l 52.0 -L 4.3
+# Notification daemon
+exec mako
 
 ### Key bindings
 #
@@ -265,9 +276,9 @@ bindsym XF86MonBrightnessDown exec $backlight set 5%-
 bindsym XF86MonBrightnessUp exec $backlight set 5%+
 bindsym $mod+u exec $backlight set 5%-
 bindsym $mod+i exec $backlight set 5%+
-bindsym XF86AudioLowerVolume exec amixer -M set Master 2%- unmute
-bindsym XF86AudioRaiseVolume exec amixer -M set Master 2%+ unmute
-bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioLowerVolume exec pamixer -u -d 5
+bindsym XF86AudioRaiseVolume exec pamixer -u -i 5
+bindsym XF86AudioMute exec pamixer -t
 bindsym XF86AudioMicMute exec --no-startupid pactl set-source-mute 1 toggle
 
 #

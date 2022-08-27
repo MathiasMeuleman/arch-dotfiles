@@ -116,3 +116,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias cf='config'
 
 alias open='xdg-open'
+
+# GPG commit sign
+export GPG_TTY=$(tty)
+
+autoload zcalc
+alias c='zcalc'
