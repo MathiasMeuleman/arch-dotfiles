@@ -17,21 +17,21 @@ set $background /home/mathias/.config/wallpapers/mountain-peaks-1-1920x1080.jpg 
 output * bg $background
 
 # Office
-output eDP-2 resolution 1920x1080 position 0,360
-output HDMI-A-1 resolution 2560x1440 position 1920,0
+# output eDP-2 resolution 1920x1080 position 0,360
+# output HDMI-A-1 resolution 2560x1440 position 1920,0
 
-# Office Ruben
-#output HDMI-A-1 resolution 2560x1440 position 1440,560
-#output DP-1 resolution 2560x1440 position 0,0 transform 270
-#output eDP-2 disable
+# Office
+output HDMI-A-1 resolution 2560x1440 position 0,490
+output DP-2 resolution 2560x1440 position 2560,0 transform 90
+output eDP-2 resolution 1920x1080 position 640,2500
 
 # TV
 #output eDP-2 resolution 1920x1080 position 320,1440
 #output HDMI-A-1 resolution 1920x1080 position 0,0
 
 # Home
-#output eDP-2 resolution 1920x1080 position 320,1440
-#output HDMI-A-1 resolution 2560x1440 position 0,0
+# output eDP-2 resolution 1920x1080 position 320,1440
+# output HDMI-A-1 resolution 2560x1440 position 0,0
 
 bindsym $mod+m output HDMI-A-1 enable
 bindsym $mod+Shift+m output HDMI-A-1 disable
@@ -78,7 +78,7 @@ bindsym $mod+Shift+n exec systemctl suspend
 
    input "type:keyboard" {
        xkb_layout us
-       xkb_options caps:swapescape
+       xkb_options caps:swapescape,compose:ralt
    }
 
 focus_follows_mouse no
