@@ -28,6 +28,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Rust plugins
 Plug 'rust-lang/rust.vim'
 
+" LSP visualize
+Plug 'j-hui/fidget.nvim'
+
 " Completions
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -62,7 +65,8 @@ noremap <C-S-Up> :resize -5<CR>
 noremap <C-S-Down> :resize +5<CR>
 
 " File tree settings
-nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <C-m> :NvimTreeToggle<CR>
+nnoremap <C-n> :NvimTreeFocus<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 

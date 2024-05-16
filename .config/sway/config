@@ -7,7 +7,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term DRI_PRIME=0 alacritty
+set $term alacritty
 set $menu wofi --show drun
 set $background /home/mathias/.config/wallpapers/mountain-peaks-1-1920x1080.jpg fill
 
@@ -17,17 +17,10 @@ set $background /home/mathias/.config/wallpapers/mountain-peaks-1-1920x1080.jpg 
 output * bg $background
 
 # Office
-# output eDP-2 resolution 1920x1080 position 0,360
-# output HDMI-A-1 resolution 2560x1440 position 1920,0
-
-# Office
 output HDMI-A-1 resolution 2560x1440 position 0,490
+output DP-1 resolution 2560x1440 position 0,490
 output DP-2 resolution 2560x1440 position 2560,0 transform 90
 output eDP-2 resolution 1920x1080 position 640,2500
-
-# TV
-#output eDP-2 resolution 1920x1080 position 320,1440
-#output HDMI-A-1 resolution 1920x1080 position 0,0
 
 # Home
 # output eDP-2 resolution 1920x1080 position 320,1440
@@ -92,7 +85,7 @@ default_border none
 default_floating_border pixel 1
 titlebar_border_thickness 0
 titlebar_padding 0
-font pango:monospace 0
+# font pango:monospace 0
 # Colors for focused windows: <border> <background> <text>
 # Only <background> is non-default
 client.focused #4c7899 #000000 #ffffff

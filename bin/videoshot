@@ -22,7 +22,8 @@ if [[ ! -f "$PIDPATH" ]]; then
     if [ ! -f "$VIDPATH" ]; then
       notify-send "Recording aborted"
     else
-      share "$VIDPATH"
+      notify-send "Recording finished"
+      wl-copy "$VIDPATH"
     fi
     rm "$PIDPATH"
     rm "$RESOURCEPATH"

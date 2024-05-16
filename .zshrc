@@ -122,3 +122,11 @@ export GPG_TTY=$(tty)
 
 autoload zcalc
 alias c='zcalc'
+
+alias ~dd='~/Documents/repos/digital-division'
+
+# WiseBrick Go flag for installing dependencies
+export GOPRIVATE=bitbucket.org/wispla
+
+# Fix for floating windows in Java appliations (e.g. JetBrains products)
+export _JAVA_AWT_WM_NONREPARENTING=1
